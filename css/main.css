@@ -1,0 +1,287 @@
+ body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+ }
+
+ #navbar {
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  position: fixed;
+  z-index: 1000000;
+  width: 100vw;
+  border-bottom: 1px solid grey;
+ }
+
+ .logo {
+    position: fixed;
+    right: 1060px;
+    top: 23px;
+ }
+
+ img {
+    width: 190px;
+ }
+
+ #IG:hover {
+   background-color: #a31521;
+   color: white;
+ }
+
+ #yelp:hover {
+   background-color: #a31521;
+   color: white;
+ }
+
+ #IG, #yelp {
+   padding: 6px;
+   position: relative;
+   bottom: 5px;
+ }
+
+ 
+ .nav-list {
+    list-style: none;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 80px;
+ }
+
+  .list-item {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 3px;
+    margin-right: 20px;
+ }
+
+ .icon {
+   position: relative;
+   top: 39px;
+   right: 48px;
+ }
+
+ 
+
+ .shift {
+    margin-right: 20px;
+ }
+
+ .vertical {
+    border-left: 1px solid black;
+    height: 3vh;
+    position: fixed;
+    margin-top: 39px;
+    right: 124px;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .icon a {
+   color: black;
+  }
+
+ #add {
+   margin-top: -5px;
+ }
+
+  .address {
+   background: #a31521;
+   padding-bottom: 6px;
+   width: 100vw;
+  
+  }
+
+  .location {
+   text-align: center;
+   margin-top: 5px;
+   color: white;
+  }
+
+  #pointer {
+   position: relative;
+   top: 26px;
+   left: 470px;
+
+   color: black;
+}
+
+#pointer:hover {
+   color:white;
+}
+
+body {
+  background-image:  url("/images/joshua-hoehne-X4YSBIsSl9s-unsplash.jpg");
+  
+
+}
+
+.trans {
+   background-color: white;
+   opacity: 0.7;
+   height: 300vh;
+    width: 100vw;
+}
+
+.image {
+   
+   position: relative;
+   bottom: 1970px;
+   width: 300px
+}
+
+.food-img {
+   width: 667px;
+}
+
+#About-us {
+   width: 613px;
+   height: 444.2px;
+   position: relative;
+   bottom: 2450px;
+   left: 667px;
+   background-color: aqua;
+   text-align: center;
+}
+
+.About {
+   font-size: 47px;
+}
+
+.bio {
+   font-size: 20px;
+}
+
+#button {
+   border: 1px solid black;
+   text-decoration: none;
+}
+
+.btn {
+   padding: 9px 38px;
+   position: relative;
+   top: 30px;
+   color: white;
+   background-color: #002366;
+}
+
+.btn:hover {
+   background-color: #a31521;
+}
+
+.catering {
+   width: 667px;
+   height: 444.2px;
+   position: relative;
+   bottom: 2450px;
+}
+
+
+.let, #cater, .needs {
+   text-align: center;
+}
+
+.let, #cater, .needs {
+   position: relative;
+   top: 100px;
+}
+
+#cater {
+   font-size: 47px;
+}
+
+.let, .needs {
+   font-size: 22px;
+}
+
+.let {
+   font-family: monotype corsiva;
+}
+
+.btn-cater {
+   padding: 9px 38px;
+   position: relative;
+   top: 120px;
+   left: 255px;
+   color: white;
+   background-color: #a31521;
+   text-decoration: none;
+}
+
+.btn-cater:hover {
+   background-color: #002366;
+}
+
+
+#image {
+   position: relative;
+   bottom: 2840px;
+   left: 700px;
+   width: 500px;
+}
+
+.vegies {
+   height: 400px;
+   width: 500px;
+}
+
+.joseph-image {
+   position: relative;
+   bottom: 2780px;
+   width: 500px;
+   left: 70px
+}
+
+.cheese {
+   height: 400px;
+   width: 500px;
+}
+
+.parties {
+   position: relative;
+   bottom: 3245px;
+   left: 600px;
+   width: 667px;
+   height: 444.2px;
+}
+
+#party, .book, .celebrate {
+   text-align: center;
+}
+
+#party, .book, .celebrate {
+   position: relative;
+   top: 75px;
+}
+
+#party {
+   font-size: 47px;
+}
+
+.book, .celebrate {
+  font-size: 22px;
+}
+
+.book {
+   font-family: monotype corsiva;
+}
+
+.btn-party {
+   padding: 9px 38px;
+   position: relative;
+   top: 100px;
+   left: 255px;
+   color: white;
+   background-color: #a31521;
+   text-decoration: none;
+}
+
+.btn-party:hover {
+   background-color: #002366;
+}
+
