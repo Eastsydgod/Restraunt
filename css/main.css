@@ -1,6 +1,7 @@
  body {
-  margin: 5;
+  margin: 0;
   padding: 0;
+  height: auto;
   overflow-x: hidden;
  }
 
@@ -94,7 +95,6 @@
    background: #a31521;
    padding-bottom: 6px;
    width: 100vw;
-  
   }
 
   .location {
@@ -107,7 +107,6 @@
    position: relative;
    top: 26px;
    left: 470px;
-
    color: black;
 }
 
@@ -115,36 +114,54 @@
    color:white;
 }
 
-body {
-  background-image:  url("/images/joshua-hoehne-X4YSBIsSl9s-unsplash.jpg");
-  
-
+.first-container {
+   background-image: url("/images/joshua-hoehne-X4YSBIsSl9s-unsplash.jpg");
+   height: 100vh;
+   position: relative;
 }
+
+
+
+#first-container {
+   background-image: url("/images/joshua-hoehne-X4YSBIsSl9s-unsplash.jpg");
+   height: 20vh;
+   position: relative;
+}
+
 
 .trans {
    background-color: white;
-   opacity: 0.7;
-   height: 300vh;
-    width: 100vw;
+   opacity: 0.9;
+   height: 100vh;
+   width: 100vw;
+   position: absolute;
+   
 }
 
-.image {
-   
-   position: relative;
-   bottom: 1970px;
-   width: 300px
+#trans {
+   background-color: white;
+   opacity: 0.9;
+   height: 20vh;
+   width: 100vw;
+   position: absolute;
 }
+
+
+
+.parent {
+   position: absolute;
+   display: flex;
+}
+
+
 
 .food-img {
-   width: 667px;
+   width: 660px;
 }
 
 #About-us {
-   width: 613px;
-   height: 444.2px;
-   position: relative;
-   bottom: 2450px;
-   left: 667px;
+   width: 660px;
+   height: 440px;
    background-color: aqua;
    text-align: center;
 }
@@ -178,7 +195,7 @@ body {
    width: 667px;
    height: 444.2px;
    position: relative;
-   bottom: 2450px;
+   bottom: 210px;
 }
 
 
@@ -186,10 +203,7 @@ body {
    text-align: center;
 }
 
-.let, #cater, .needs {
-   position: relative;
-   top: 100px;
-}
+
 
 #cater {
    font-size: 47px;
@@ -220,9 +234,9 @@ body {
 
 #image {
    position: relative;
-   bottom: 2840px;
-   left: 700px;
-   width: 500px;
+   left: 25px;
+   bottom: 140px;
+   width: 530px;
 }
 
 .vegies {
@@ -232,20 +246,19 @@ body {
 
 .joseph-image {
    position: relative;
-   bottom: 2780px;
-   width: 500px;
-   left: 70px
+   bottom: 330px;
+   left: 70px;
 }
 
 .cheese {
-   height: 400px;
    width: 500px;
+   height: 400px;
 }
 
 .parties {
    position: relative;
-   bottom: 3245px;
-   left: 600px;
+   bottom: 365px;
+   left: 90px;
    width: 667px;
    height: 444.2px;
 }
@@ -254,10 +267,6 @@ body {
    text-align: center;
 }
 
-#party, .book, .celebrate {
-   position: relative;
-   top: 75px;
-}
 
 #party {
    font-size: 47px;
@@ -285,3 +294,847 @@ body {
    background-color: #002366;
 }
 
+#call {
+   background-color: #002366;
+   height: 100vh;
+   width: 100vw;
+   padding-top: 10px;
+   z-index: 1;
+}
+
+.call {
+   font-size: 22px;
+}
+
+.call-us {
+   margin-top: 70px;
+}
+
+.reservations {
+   font-size: 47px;
+}
+
+
+
+
+.dropdown {
+   display: flex;
+   margin-top: 70px;
+}
+
+.reservations, .call  {
+   text-align: center;
+   color: white;
+}
+
+#person, #time {
+  position: relative;
+  left: 450px;
+  height: 40px;
+  width: 117px;
+  font-size: 15px;
+}
+
+#date {
+  position: relative;
+  left: 450px;
+  height: 36px;
+  font-size: 15px;
+}
+
+#person:hover {
+   transform: translateY(1px);
+}
+
+#date:hover {
+   transform: translateY(1px);
+}
+
+#time:hover {
+   transform: translateY(1px);
+}
+
+.news {
+   display: flex;
+}
+
+#newsletter, .updates, .sign-up {
+   margin-left: 100px;
+}
+
+#newsletter {
+   font-size: 47px;
+}
+
+.updates {
+   font-size: 22px;
+   font-family: monotype corsiva;
+}
+
+.sign-up {
+   font-size: 22px;
+}
+
+
+.newsletter {
+   background-color: aqua;
+   width: 660px;
+   height: 450px;
+}
+
+.form {
+  width: 50%;
+  position: relative;
+  left: 100px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.form input{
+   width: 100%;
+   height: 100%;
+   border: none;
+   outline: none;
+   background: aqua;
+}
+
+.form label{
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   height: 100%;
+   width: 100%;
+   pointer-events: none;
+   border-bottom: 1px solid black;
+}
+
+.form label::after{
+   content: "";
+   position: absolute;
+   left: 0px;
+   bottom: -1px;
+   height: 100%;
+   width: 100%;
+   border-bottom: 2px solid #a31521;
+   transform: translateX(-100%);
+   transition: transform 0.3s ease;
+}
+
+
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after{
+   transform: translateX(0%);
+}
+
+.submit {
+   padding: 9px 38px;
+   position: relative;
+   left: 416px;
+   top: -37px;
+   color: white;
+   background-color: #a31521;
+   border: none;
+}
+
+
+
+.submit:hover {
+   background: #002366;
+}
+
+.last-section {
+   display: flex;
+   justify-content: space-between;
+   background: #a31521;
+   height: 230px;
+   color: white;
+   border-bottom: 2px solid white;
+}
+
+#location {
+   margin-left: 140px;
+}
+
+.find-us {
+   margin-right: 140px;
+}
+
+.contact-us {
+   margin-right: 100px;
+}
+
+.contact-us a {
+   color: white;
+}
+
+#insta:hover {
+   background: white;
+   color: #a31521;
+ }
+
+ #yelps:hover {
+   background: white;
+   color: #a31521;
+ }
+
+ #insta, #yelps {
+   padding: 6px;
+   position: relative;
+   bottom: 5px;
+ }
+
+ .phone {
+   width: 103px;
+   color: white;
+ }
+
+ .phone:hover {
+   cursor: pointer;
+   border-bottom: 2px solid white;
+ }
+
+.powered-by {
+   background: #002366;
+   padding-top: 3px;
+   height: 110px;
+}
+
+.powered {
+   text-align: center;
+   font-size: 22px;
+   color: white;
+}
+
+.spot {
+   position: relative;
+   top: 7px;
+}
+
+.website {
+   text-align: center;
+   color: white;
+   font-size: 17px;
+   border-bottom: 2px solid white;
+   margin-left: 324px;
+   margin-right: 324px;
+}
+
+.website:hover {
+   color: #BE8400;
+   border-bottom: 2px solid #BE8400;
+}
+
+a {
+   text-decoration: none;
+}
+
+footer {
+   background: #333333;
+   height: 50px;
+   padding-top: 3px;
+}
+
+.accesible {
+   text-align: center;
+   font-size: 17px;
+   color: white;
+}
+
+.learn-more {
+   color: white;
+   margin-left: 4px;
+   border-bottom: 2px solid white;
+}
+
+@media (max-width: 600px) {
+   body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      
+     }
+}
+
+@media (max-width: 600px) {
+  #navbar {
+      background: white;
+      display: inline-block;
+      font-weight: bold;
+      position: fixed;
+      z-index: 1000000;
+      width: 375px;
+      border-bottom: 1px solid grey;
+      top: -10px;
+     }
+}
+
+@media   (max-width: 600px) {
+   .icon {
+      display: none;
+    }
+}
+
+
+
+@media  (max-width: 600px) {
+   .logo {
+      position: fixed;
+      left: 111px;
+   }  
+}
+
+@media   (max-width: 600px) {
+   img {
+      width: 40px;
+   }
+}
+
+
+
+
+
+@media  (max-width: 600px) {
+   .nav-list {
+      list-style: none;
+      position: relative;
+      top: 70px;
+      margin-bottom: 80px;
+      margin-left: 60px;
+   }
+}
+
+@media  (max-width: 600px) {
+   .list-item {
+      display: block;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-left: 3px;
+      margin-right: 20px;
+   }
+}
+
+@media  (max-width: 600px) {
+   #drinks, #catering{
+      position: relative;
+      right: 60px;
+      top: 50px;
+   }
+}
+
+@media  (max-width: 600px) {
+   #menu {
+      position: relative;
+      left: 50px;
+      top: 23px;
+   }
+}
+
+
+@media  (max-width: 600px) {
+   #events {
+      position: relative;
+      right: 60px;
+      top: 50px;
+   }
+}
+
+@media  (max-width: 600px) {
+   #parties, #jobs, #reserves {
+      position: relative;
+      left: 140px;
+      bottom: 96px;
+   }
+}
+
+
+@media  (max-width: 600px) {
+   #coverVideo {
+      position: relative;
+      margin-top: 408px;
+      padding-right: 10px;
+      right: 140px;
+      height: 270px;
+      width: 600px;
+   }
+}
+
+@media  (max-width: 600px) {
+   #add {
+     margin-top: -5px;
+
+   }
+}
+
+@media (max-width: 600px) {
+   .first-container {
+      background-image: url("/images/joshua-hoehne-X4YSBIsSl9s-unsplash.jpg");
+      height: 100vh;
+      position: relative;
+      width: 50%;
+   }
+}
+
+@media (max-width: 600px) {
+   .trans {
+      background-color: white;
+      opacity: 0.9;
+      height: 100vh;
+      width: 50vw;
+      position: absolute; 
+   }
+}
+
+@media  (max-width: 600px) {
+   .parent {
+      position: absolute;
+      display: block;
+   }
+   
+}
+
+
+
+@media  (max-width: 600px) {
+   img {
+      width: 140px;
+   }
+}
+
+
+@media  (max-width: 600px) {
+
+   .address {
+      background: #a31521;
+      padding-bottom: 4px;
+      margin-top: 37px;
+      position: relative;
+      bottom: 23px;
+      width: 375px;
+     }
+}
+
+@media  (max-width: 600px) {
+   #pointer {
+      position: relative;
+      top: 10px;
+      left: 177px;
+      color: black;
+   }
+}
+
+@media  (max-width: 600px) {
+   .location {
+      text-align: center;
+      margin-top: 15px;
+      color: white;
+     }
+}
+
+@media  (max-width: 600px) {
+   .food-img {
+      width: 375px;
+      height: 440px;
+      position: relative;
+      bottom: 22px;
+   }
+}
+
+@media  (max-width: 600px) {
+   #About-us {
+      width: 375px;
+      height: 440px;
+      background-color: aqua;
+      text-align: center;
+      position: relative;
+      bottom: 38px;
+      z-index: 1;
+   }
+}
+
+@media  (max-width: 600px) {
+   .catering {
+      width: 375px;
+      height: 444.2px;
+      position: relative;
+      top: 299px;
+   }
+}
+
+@media  (max-width: 600px) {
+   .btn {
+      padding: 9px 18px;
+      position: relative;
+      color: white;
+      background-color: #a31521;
+      text-decoration: none;
+   }
+}
+
+@media  (max-width: 600px) { 
+.About {
+   font-size: 20px;
+}
+}
+
+@media (max-width: 600px) {
+   .bio {
+      font-size: 17px;
+   }
+}
+
+@media   (max-width: 600px) {
+   #cater {
+      font-size: 20px;
+   }
+}
+
+@media  (max-width: 600px) {
+   .let {
+      font-size: 17px;
+   }
+   
+}
+
+@media   (max-width: 600px) {
+  .needs {
+   font-size: 17px;
+  }
+}
+
+@media  (max-width: 600px) {
+   .btn-cater {
+      padding: 9px 27px;
+      position: relative;
+      top: 80px;
+      left: 120px;
+      color: white;
+      background-color: #a31521;
+      text-decoration: none;
+   }
+}
+
+@media  (max-width: 600px) {
+   .vegies {
+      position: relative;
+      right: 50px;
+      top: 370px;
+      height: 400px;
+      width: 395px;
+      z-index: 1;
+   }
+}
+
+@media  (max-width: 600px) {
+   .joseph-image {
+      position: relative;
+      top: -84px;
+      left: 1px;
+      bottom: 490px;
+   }
+}
+
+
+@media  (max-width: 600px) {
+   .cheese {
+      width: 375px;
+      height: 400px;
+      position: relative;
+      top: 523px;
+      
+   }
+}
+
+@media  (max-width: 600px) {
+   .parties {
+      position: relative;
+      top: 433px;
+      left: 1px;
+      width: 375px;
+      height: 444.2px;
+   }
+}
+
+@media (max-width: 600px) {
+ #party {
+   font-size: 20px;
+ }
+}
+
+@media  (max-width: 600px) {
+  .book {
+   font-size: 17px;
+  }
+}
+
+@media  (max-width: 600px) {
+  .celebrate {
+   font-size: 17px;
+   margin-right: 7px;
+  }
+}
+
+@media  (max-width: 600px) {
+   .btn-party {
+      padding: 9px 27px;
+      position: relative;
+      top: 100px;
+      left: 129px;
+      color: white;
+      background-color: #a31521;
+      text-decoration: none;
+   }
+}
+
+@media  (max-width: 600px) {
+   #call {
+      background-color: #002366;
+      height: 440px;
+      width: 375px;
+      padding-top: 10px;
+      position: relative;
+      top: 530px;
+      
+   }
+}
+
+@media (max-width: 600px) {
+   .reservations {
+      font-size: 20px;
+   }
+}
+
+@media  (max-width: 600px) {
+   .call {
+      font-size: 17px;
+   }
+}
+
+
+@media  (max-width: 600px) {
+   .dropdown {
+      display: flex;
+      margin-top: 70px;
+      position: relative;
+      right: 435px;
+   }
+}
+
+@media  (max-width: 600px) {
+   #person, #time {
+      position: relative;
+      left: 500px;
+      height: 40px;
+      width: 80px;
+      font-size: 15px;
+    }
+}
+
+@media  (max-width: 600px) {
+   #date {
+      position: relative;
+      left: 500px;
+      height: 36px;
+      font-size: 15px;
+      width: 80px;
+    }
+}
+
+@media  (max-width: 600px) {
+   .news {
+      display: block;
+   }
+}
+
+@media   (max-width: 600px) {
+   .newsletter {
+      background-color: aqua;
+      width: 375px;
+      height: 440px;
+      position: relative;
+      top: 520px;
+   }
+}
+
+@media   (max-width: 600px) {
+  .map {
+   width: 375px;
+   position: relative;
+   top: 250px;
+  }
+}
+
+@media   (max-width: 600px) {
+   #newsletter, .updates, .sign-up {
+      margin-left: 19px;
+   }
+}
+
+@media  (max-width: 600px) {
+  #newsletter {
+   font-size: 20px;
+  }
+}
+
+@media  (max-width: 600px) {
+  .updates, .sign-up {
+   font-size: 17px;
+  }
+}
+
+@media  (max-width: 600px) {
+   .form {
+      width: 50%;
+      position: relative;
+      left: 15px;
+      height: 30px;
+      overflow: hidden;
+    }
+    
+}
+
+@media  (max-width: 600px) {
+   .submit {
+      padding: 9px 27px;
+      position: relative;
+      left: 206px;
+      top: -37px;
+      color: white;
+      background-color: #a31521;
+      border: none;
+   }
+}
+
+@media   (max-width: 600px) {
+   .last-section {
+      display: block;
+      justify-content: space-between;
+      background: #a31521;
+      height: 440px;
+      color: white;
+      border-bottom: 2px solid white;
+      width: 375px;
+      position: relative;
+      top: 480px;
+   }
+   
+}
+
+@media  (max-width: 600px) {
+   #location {
+      margin-left: 40px;
+      font-size: 12px;
+      
+   }
+}
+
+@media  (max-width: 600px) {
+   .hours, .find-us {
+      margin-left: 40px;
+      font-size: 12px;
+   }
+}
+
+@media   (max-width: 600px) {
+   .powered-by {
+      background: #002366;
+      padding-top: 3px;
+      height: 310px;
+      width: 375px;
+      position: relative;
+      top: 477px;
+   }
+}
+
+@media   (max-width: 600px) {
+   footer {
+      background: #333333;
+      height: 70px;
+      padding-top: 3px;
+      position: relative;
+      top: 475px;
+      width: 375px;
+   }
+}
+
+
+@media   (max-width: 600px) {
+   .website {
+      text-align: center;
+      color: white;
+      font-size: 17px;
+      border-bottom: 2px solid white;
+      margin-left: 30px;
+      margin-top: 70px;
+      width: 300px;
+}
+}
+
+@media   (max-width: 600px) {
+   .vertical {
+      display: none;
+   }
+}
+
+@media   (max-width: 600px) {
+   .first-container {
+      background-image: url("/images/joshua-hoehne-X4YSBIsSl9s-unsplash.jpg");
+      height: 100vh;
+      width: 375px;
+      position: relative;
+   }
+}
+
+@media   (max-width: 600px) {
+   #first-container {
+      background-image: url("/images/joshua-hoehne-X4YSBIsSl9s-unsplash.jpg");
+      height: 100vh;
+      width: 375px;
+      position: relative;
+     
+   }
+}
+
+@media   (max-width: 600px) {
+   .trans {
+      background-color: white;
+      opacity: 0.9;
+      /*height: 100vh;*/
+      width: 375px;
+      position: absolute;
+   }   
+}
+
+@media   (max-width: 600px) {
+   #trans {
+      background-color: white;
+      opacity: 0.9;
+      height: 70vh;
+      width: 375px;
+      position: absolute;
+      
+   }
+   
+}
+
+@media   (max-width: 600px) {
+   #first-containers {
+      background-image: url("/images/joshua-hoehne-X4YSBIsSl9s-unsplash.jpg");
+      height: 100vh;
+      width: 375px;
+      position: relative;
+      opacity: 30%;
+     
+   }
+}
+
+
+
+@media (max-width: 600px) {
+   .container {
+      margin: auto;
+      padding: 0;
+      overflow: auto;
+      overflow-x: hidden;
+      
+   }
+}
